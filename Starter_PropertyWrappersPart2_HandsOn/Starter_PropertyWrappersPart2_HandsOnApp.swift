@@ -11,7 +11,7 @@ import SwiftUI
 struct Starter_PropertyWrappersPart2_HandsOnApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            PickFruitsView()
         }
     }
 }
