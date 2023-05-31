@@ -7,11 +7,12 @@
 
 import Foundation
 
-class OrderItem: ObservableObject, Identifiable {
+struct OrderItem: Identifiable {
+    
     // MARK: properties
-    let uuid: UUID = UUID()    
-    @Published var fruit: Fruit
-    @Published var quantity: Int
+    let id: UUID = UUID()
+    var fruit: Fruit
+    var quantity: Int
     
     // initializer
     init(fruit: Fruit, quantity: Int) {
